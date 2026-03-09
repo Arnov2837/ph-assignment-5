@@ -88,3 +88,35 @@ numbers.map((n) => n * 2); // [2, 4, 6, 8]
 numbers.filter((n) => n > 2); // [3, 4]
 numbers.forEach((n) => console.log(n)); // prints each number
 ```
+
+4️⃣ What is an Arrow Function?
+
+An **arrow function** is a shorter way to write a function in JavaScript using the `=>` syntax.
+
+### Example
+
+```javascript id="j6t0c8"
+const add = (a, b) => {
+  return a + b;
+};
+
+console.log(add(2, 3)); // 5
+```
+
+✅ Arrow functions make the code **shorter and cleaner**.
+
+5️⃣ What are Template Literals?
+
+**Template literals** are a way to write strings in JavaScript using **backticks (` `)**.
+They allow **embedding variables and expressions** using `${}`.
+
+### Example
+
+```javascript
+const name = "Shohan";
+const message = `Hello, ${name}!`;
+
+console.log(message); // Hello, Shohan!
+```
+
+✅ Template literals make it easier to **combine strings and variables**.
