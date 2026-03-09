@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github-Issue-Tracker</title>
+
+    <!-- tailwend & daishy khala -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- style -->
+    <style>
+      * {
+        font-family: "Geist", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="bg-base-200 justify-center mx-auto text-center">
+      <div>
+        <div class="text-center pb-2">
+          <img
+            class="justify-center mx-auto pt-10"
+            src="assets/github-logo.png"
+            alt=""
+          />
+          <h2 class="font-bold text-[30px]">GitHub Issues Tracker</h2>
+          <p class="font-normal">Sign in to manage your issue</p>
+        </div>
+        <!-- fild sate loging -->
+        <div>
+          <fieldset
+            class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4 justify-center mx-auto pb-20"
+          >
+            <label class="label">Username</label>
+            <input
+              id="user-name"
+              type="text"
+              class="input"
+              placeholder="Enter Username"
+            />
+
+            <label class="label">Password</label>
+            <input
+              id="enter-password"
+              type="password"
+              class="input"
+              placeholder="Enter Password"
+            />
+
+            <button id="sign-in" class="btn btn-primary mt-4">Sign In</button>
+          </fieldset>
+        </div>
+        <div class="flex justify-center items-center my-4 w-[456px] mx-auto">
+          <div class="flex-grow border-t border-gray-300"></div>
+          <span class="px-3 text-gray-500 font-medium">OR</span>
+          <div class="flex-grow border-t border-gray-300"></div>
+        </div>
+        <p class="py-5">Demo Credentials</p>
+        <div class="bg-slate-200 w-4/12 mx-auto p-8 rounded-sm">
+          <p>Username: admin</p>
+          <p>Password: admin123</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script/loging.js"></script>
+  </body>
+</html>
